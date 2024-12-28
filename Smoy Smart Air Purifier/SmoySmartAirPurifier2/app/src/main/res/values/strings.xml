@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Smoy Smart Air Purifier</string>
+    <string name="Back">Back</string>
+    <string name="peringatan">Not Accurate?</string>
+    <string name="baik">Good</string>
+    <string name="saranbaik">Mechanical ventilation in operation,
+Fan speed low</string>
+    <string name="indoor">Indoor Air Quality</string>
+    <string name="param1">CO2 Level</string>
+    <string name="val1">800 PPM</string>
+    <string name="param2">Humidity</string>
+    <string name="val2">80%</string>
+    <string name="param3">Temperature</string>
+    <string name="val3">35°C</string>
+
+</resources>
