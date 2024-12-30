@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TampilanAwal">
+
+    <!-- Background -->
+
+    <View
+        android:id="@+id/divider_lin6"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="200dp"
+        android:background="@drawable/pemisah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background" />
+
+    <View
+        android:id="@+id/divider_lin5"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="104dp"
+        android:background="@drawable/pemisah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background" />
+
+    <LinearLayout
+        android:id="@+id/Humidity"
+        android:layout_width="391dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="135dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background">
+
+        <!-- Ikon humidity -->
+
+        <!-- Kontainer untuk teks -->
+
+        <ImageView
+            android:id="@+id/humidity"
+            android:layout_width="72dp"
+            android:layout_height="50dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/humidity" />
+
+        <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <!-- Tingkat CO₂ -->
+            <TextView
+                android:id="@+id/co2_level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/param2"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Waktu pembaruan -->
+            <TextView
+                android:id="@+id/parameter1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/val2"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/CO2"
+        android:layout_width="391dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="45dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background">
+
+        <!-- Ikon CO₂ -->
+        <ImageView
+            android:id="@+id/co2_icon"
+            android:layout_width="72dp"
+            android:layout_height="50dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/co2" />
+
+        <!-- Kontainer untuk teks -->
+        <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <!-- Tingkat CO₂ -->
+            <TextView
+                android:id="@+id/co2l"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/param1"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+            <!-- Waktu pembaruan -->
+            <TextView
+                android:id="@+id/updated_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/val1"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Temperature"
+        android:layout_width="391dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="232dp"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background">
+
+        <ImageView
+            android:id="@+id/Temperature1"
+            android:layout_width="72dp"
+            android:layout_height="50dp"
+            android:importantForAccessibility="no"
+            android:src="@drawable/suhu" />
+
+        <LinearLayout
+            android:layout_width="289dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <!-- Tingkat CO₂ -->
+            <TextView
+                android:id="@+id/suhu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/param3"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <!-- Waktu pembaruan -->
+            <TextView
+                android:id="@+id/parameter2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/val3"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/background"
+        android:layout_width="419dp"
+        android:layout_height="331dp"
+        android:layout_alignParentTop="true"
+        android:background="#5DB075"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Back Text -->
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="183dp"
+        android:layout_height="139dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="@+id/background"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.338"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/smile" />
+
+    <TextView
+        android:id="@+id/peringatan"
+        android:layout_width="84dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="44dp"
+        android:text="@string/peringatan"
+        android:textColor="@color/white"
+        android:textSize="13sp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.922"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/alert"
+        android:layout_width="28dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="52dp"
+        android:contentDescription="@string/peringatan"
+        android:src="@drawable/exclamation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="49dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="28dp"
+        android:text="@string/Back"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/baik"
+        android:layout_width="89dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="216dp"
+        android:text="@string/baik"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/saran"
+        android:layout_width="171dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="272dp"
+        android:text="@string/saranbaik"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/indoor"
+        android:layout_width="202dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="345dp"
+        android:text="@string/indoor"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/divider_lin"
+        android:layout_width="381dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="300dp"
+        android:background="@drawable/pemisah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FBFCFC"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/background"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="0dp">
+
+        <!-- Tombol Home -->
+        <Button
+            android:id="@+id/button_home"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/Back"
+            android:drawableTop="@drawable/rumah"
+            />
+
+        <!-- Tombol Map -->
+        <Button
+            android:id="@+id/button_map"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/Back"
+            android:drawableTop="@drawable/power" />
+
+        <!-- Tombol Feedback -->
+        <Button
+            android:id="@+id/button_feedback"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:background="?android:attr/selectableItemBackground"
+            android:contentDescription="@string/Back"
+            android:drawableTop="@drawable/wifi" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
